@@ -9,21 +9,19 @@
       h1 {
          position:absolute;
          top:0;
+         right:0;
          left:0;
          margin:0;
          font-size: 30vw;
+         text-align: center;
          line-height:1;
          color: #0edeff;
          mix-blend-mode: multiply;
       }
 
-      h1::after {
-         content: "Martin";
-         position: absolute;
-         top:0;
-         left:.1em;
-         margin:0;
+      h1 + h1 {
          color: #ff5500;
+         left: .2em;
       }
    </style>
 </head>
@@ -40,5 +38,6 @@
       ga('send', 'pageview');
    </script>
    <h1>Martin</h1>
+   <h1 aria-hidden="true">Martin</h1>
 </body>
 </html>
