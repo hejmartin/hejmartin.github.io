@@ -1,0 +1,17 @@
+{
+  "name": "hejmartin",
+  "version": "2.0.0",
+  "description": "Homepage",
+  "repository": {
+    "url": "git@github.com:hejmartin/hejmartin.github.io.git",
+    "type": "git"
+  },
+  "author": "Martin Brännstrand",
+  "license": " ",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

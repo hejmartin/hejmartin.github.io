@@ -1,0 +1,82 @@
+* {
+   margin:0;
+}
+
+h1 {
+   font-size: 30vw;
+   font-family: times, serif;
+   line-height:1;
+}
+
+.red,
+.yellow {
+   display: none;
+}
+
+@supports (display: grid) and (mix-blend-mode: multiply) {
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-rows: 1fr auto 1fr;
+      height: 100vh;
+   }
+
+   h1 {
+      grid-column: 2;
+      grid-row: 2;
+      mix-blend-mode: multiply;
+      -webkit-animation-duration:  2.5s;
+              animation-duration:  2.5s;
+      -webkit-animation-name: spin;
+              animation-name: spin;
+      -webkit-animation-iteration-count: 2;
+              animation-iteration-count: 2;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: cubic-bezier(.84,.02,.62,1);
+              animation-timing-function: cubic-bezier(.84,.02,.62,1);
+   }
+
+   .blue {
+      color: #0edeff;
+      -webkit-animation-delay: 2.1s;
+              animation-delay: 2.1s;
+   }
+
+   .red {
+      display: block;
+      color: #ff5500;
+      -webkit-animation-delay: 2.3s;
+              animation-delay: 2.3s;
+   }
+
+   .yellow {
+      display: block;
+      color: #fffc4f;
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s;
+   }
+
+   @-webkit-keyframes spin {
+      from {
+         -webkit-transform: scale(1) rotate(0);
+                 transform: scale(1) rotate(0);
+      }
+      to {
+         -webkit-transform: scale(2) rotate(400deg);
+                 transform: scale(2) rotate(400deg);
+      }
+   }
+
+   @keyframes spin {
+      from {
+         -webkit-transform: scale(1) rotate(0);
+                 transform: scale(1) rotate(0);
+      }
+      to {
+         -webkit-transform: scale(2) rotate(400deg);
+                 transform: scale(2) rotate(400deg);
+      }
+   }
+}
+/*# sourceMappingURL=style.css.map */

@@ -5,51 +5,7 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Martin</title>
-   <style>
-      * {
-         margin:0;
-      }
-
-      .grid {
-         display: grid;
-         grid-template-columns: 1fr auto 1fr;
-         grid-template-rows: 1fr auto 1fr;
-         height: 100vh;
-      }
-
-      h1 {
-         grid-column: 2;
-         grid-row: 2;
-         font-size: 30vw;
-         font-family: times, serif;
-         line-height:1;
-         mix-blend-mode: multiply;
-      }
-
-      .blue {
-         color: #0edeff;
-         animation: 2.5s 2.1s spin 2 alternate cubic-bezier(.84,.02,.62,1);
-      }
-
-      .red {
-         color: #ff5500;
-         animation: 2.5s 2.3s spin 2 alternate cubic-bezier(.84,.02,.62,1);
-      }
-
-      .yellow {
-         color: #fffc4f;
-         animation: 2.5s 2s spin 2 alternate cubic-bezier(.84,.02,.62,1);
-      }
-
-      @keyframes spin {
-         from {
-            transform: scale(1) rotate(0);
-         }
-         to {
-            transform: scale(2) rotate(400deg);
-         }
-      }
-   </style>
+   <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
    <script>
